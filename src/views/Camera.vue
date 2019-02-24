@@ -14,10 +14,6 @@ import * as tf from "@tensorflow/tfjs";
 
 let img = new Image();
 img.src = "@/assets/pizza1.jpg";
-console.log("width: ", img.width);
-console.log("height: ", img.height);
-
-console.log("Image: ", img);
 
 export default {
   data: () => {
@@ -28,19 +24,16 @@ export default {
   methods: {
     async loadModel() {
       const model = await tf
-        .loadModel("http://localhost:8081/model.json")
+        .loadLayersModel("http://localhost:8081/model.json")
         .then(promisedModel => {
           console.log("LOADED");
           let img = new Image();
           img.src = "@/assets/pizza1.jpg";
-
-          console.log("img.src: ", img.src);
-          const example = tf.fromPixels(new ImageData(img.width, img.height));
-          console.log("example: ", example);
+          const example = tf.fromPixels(new ImageData(261, 264));
+          imageData;
+          //   const example = tf.fromPixels(new ImageData(img.width, img.height));
           const prediction = promisedModel.predict(example);
           predValue = prediction;
-
-          console.log("PREDVALUE: ", predValue);
         })
         .catch(err => {
           console.log("ERROR");
