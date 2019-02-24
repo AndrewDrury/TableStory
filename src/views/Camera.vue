@@ -10,9 +10,17 @@
     </b-row>
     <b-row>
       <b-col>
-        <b-btn class="mt-4" v-on:click="upload">Upload</b-btn>
+        <b-btn class="mt-4 btn-primary" v-on:click="upload">Upload</b-btn>
       </b-col>
     </b-row>
+    <b-row class="float-left" style="margin: auto">
+      <b-col>
+        <video ref="video" id="webcam" width="640" height="480" autoplay></video>
+        <canvas ref="canvas" id="canvas" width="640" height="480"></canvas>
+        <b-btn id="snap" v-on:click="capture()">Snap Photo</b-btn>
+      </b-col>
+    </b-row>
+
     <b-row class="botnav">
       <nav-bar></nav-bar>
     </b-row>
@@ -73,6 +81,51 @@ export default {
   },
   mounted() {
     this.loadModel();
+
+    navigator.mediaDevices
+      .enumerateDevices()
+      .then(devices => {
+        console.log("devices: ", devices);
+        // this is the webcam id of webcam. WILL NEED TO CHANGE THIS FOR THE LOGITECH WEBCAM
+        let webcam = devices.filter(
+          v =>
+            v.deviceId ==
+            "eb088f8f601ce903675e2e16cc260192d0dedab4f9f515ed37847416b1b6d463"
+        )[0];
+        let mic = devices.filter(
+          v =>
+            v.deviceId ==
+            "a54f598b6bedb363b459c7158a4563025f11910198f2456bb4f9fe72537ce601"
+        )[0];
+        if (!webcam) {
+          console.log("No web!");
+          return;
+        } else {
+          console.log(webcam);
+        }
+
+        let constraints = {
+          audio: false,
+          video: {
+            deviceId: { ideal: webcam.deviceId },
+            width: { ideal: window.innerWidth },
+            height: { ideal: window.innerHeight }
+          }
+        };
+        navigator.mediaDevices
+          .getUserMedia(constraints)
+          .then(stream => {
+            const video = document.getElementById("webcam");
+            video.srcObject = stream;
+            console.log("DONE");
+          })
+          .catch(err => {
+            console.log(err.name + ": " + err.message);
+          });
+      })
+      .catch(err => {
+        console.log(err.name + ": " + err.message);
+      });
   }
 };
 </script>

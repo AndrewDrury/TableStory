@@ -55,11 +55,11 @@ export default new Router({
         import(/* webpackChunkName: "other-profile" */ "./views/OtherProfile.vue")
     },
     {
-      path: "/restaurant-profile",
-      name: "restaurant-profile",
+      path: "/favourites",
+      name: "favourites",
 
       component: () =>
-        import(/* webpackChunkName: "restaurant-profile" */ "./views/RestaurantProfile.vue")
+        import(/* webpackChunkName: "restaurant-profile" */ "./views/Favourites.vue")
     },
     {
       path: "/camera",

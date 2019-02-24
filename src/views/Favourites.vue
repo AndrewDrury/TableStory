@@ -1,10 +1,10 @@
 <template>
-  <div class="discover-dishes verticalCenter">
+  <div class="favourites verticalCenter">
     <b-container fluid class="p-0">
       <b-row class="card-top m-0">
         <b-col>
           <b-row>
-            <div style="font-size: 20px;">Discover Dishes</div>
+            <div style="font-size: 20px;">Favourites</div>
           </b-row>
           <b-row class="my-3">
             <b-btn
@@ -20,11 +20,10 @@
           <b-col>
             <b-row>
               <b-col>
-                <b-row class="image imageItem" style="background: url('/img/egg1.png')"></b-row>
+                <b-row class="image imageItem"></b-row>
               </b-col>
             </b-row>
             <b-row class="pt-2">
-                <img src='/img/heart.png'/>
               <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">55 bites</b-col>
               <div
                 class="float-right rightAlign"
@@ -50,11 +49,10 @@
           <b-col>
             <b-row>
               <b-col>
-                <b-row class="image imageItem" style="background: url('/img/egg2.png')"></b-row>
+                <b-row class="image imageItem"></b-row>
               </b-col>
             </b-row>
             <b-row class="pt-2">
-              <img src='/img/heart.png'/>
               <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">55 bites</b-col>
               <div
                 class="float-right rightAlign"
@@ -118,6 +116,7 @@
 }
 
 .imageItem {
+  background: url("/img/pizza1.jpg");
   background-size: cover;
   width: 71vw;
   height: 20vh;
