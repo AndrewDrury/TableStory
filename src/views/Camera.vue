@@ -10,7 +10,7 @@
     </b-row>
     <b-row>
       <b-col>
-        <b-btn v-on:click="upload">Upload</b-btn>
+        <b-btn class="mt-4" v-on:click="upload">Upload</b-btn>
       </b-col>
     </b-row>
     {{ predValue }}
@@ -18,8 +18,6 @@
 </template>
 
 <style>
-@import "../assets/main.scss";
-@import "../assets/variables.scss";
 </style>
 
 
