@@ -188,8 +188,8 @@
 }
 
 .botnav {
-  position: absolute;
-  bottom: 0px;
+  position: fixed;
+  bottom: 0;
   margin-left: auto;
   width: 100%;
 }
