@@ -2,10 +2,8 @@
   <v-card class="card">
     <b-container>
       <b-row>
-        <b-col class="d-flex align-items-center" style="width: 20%;">
-          <a :to="'/discover-places/'">
-            <img src="/img/map-paper.png">
-          </a>
+        <b-col class="d-flex align-items-center" style="width: 20%;" @click="toPlaces">
+          <img src="/img/map-paper.png">
         </b-col>
         <b-col class="d-flex align-items-center" style="width: 20%;" @click="toDishes">
           <img src="/img/users-2.png">
@@ -38,16 +36,17 @@
 export default {
   methods: {
     toPlaces() {
-      this.$router.push("discover-places");
+      this.$router.push("/discover-places");
+      // this.$router.go("discover-places");
     },
     toDishes() {
-      this.$router.push("discover-dishes");
+      this.$router.push("/discover-dishes");
     },
     toCamera() {
-      this.$router.push("camera");
+      this.$router.push("/camera");
     },
     toProfile() {
-      this.$router.push("my-profile");
+      this.$router.push("/my-profile");
     }
   }
 };
