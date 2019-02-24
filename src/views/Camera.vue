@@ -10,13 +10,12 @@
     </b-row>
     <b-row>
       <b-col>
-        <b-btn class="mt-4 btn-primary" v-on:click="upload">Upload</b-btn>
+        <b-btn class="my-4 btn-primary" v-on:click="upload">Upload</b-btn>
       </b-col>
     </b-row>
-    <b-row class="float-left" style="margin: auto">
+    <b-row class="text-left" style="margin: auto; left: 0px">
       <b-col>
         <video ref="video" id="webcam" width="640" height="480" autoplay></video>
-        <canvas ref="canvas" id="canvas" width="640" height="480"></canvas>
         <b-btn id="snap" v-on:click="capture()">Snap Photo</b-btn>
       </b-col>
     </b-row>
