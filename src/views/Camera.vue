@@ -25,7 +25,12 @@
 import * as tf from "@tensorflow/tfjs";
 
 let img = new Image();
-img.src = "@/assets/pizza1.jpg";
+
+img.src = "/img/pizza1.jpg";
+console.log("width: ", img.width);
+console.log("height: ", img.height);
+
+console.log("Image: ", img);
 
 export default {
   data: () => {
@@ -39,8 +44,6 @@ export default {
         .loadLayersModel("http://localhost:8081/model.json")
         .then(promisedModel => {
           console.log("LOADED");
-          let img = new Image();
-          img.src = "@/assets/pizza1.jpg";
           const example = tf.fromPixels(new ImageData(261, 264));
           //   const example = tf.fromPixels(new ImageData(img.width, img.height));
           const prediction = promisedModel.predict(example);
