@@ -16,7 +16,11 @@
     <b-row class="text-left" style="margin: auto; left: 0px">
       <b-col>
         <video ref="video" id="webcam" width="640" height="480" autoplay></video>
-        <b-btn id="snap" v-on:click="capture()">Snap Photo</b-btn>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col class="margin: auto">
+        <b-btn id="snap" class="my-2 btn-primary" v-on:click="capture()">Snap Bite</b-btn>
       </b-col>
     </b-row>
 
