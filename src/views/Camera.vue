@@ -13,15 +13,24 @@
         <b-btn class="mt-4" v-on:click="upload">Upload</b-btn>
       </b-col>
     </b-row>
-    {{ predValue }}
+    <b-row class="botnav">
+      <nav-bar></nav-bar>
+    </b-row>
   </div>
 </template>
 
 <style>
+.botnav {
+  position: absolute;
+  bottom: 0px;
+  margin-left: auto;
+  width: 100%;
+}
 </style>
 
 
 <script>
+import nav from "@/components/BottomNav.vue";
 import * as tf from "@tensorflow/tfjs";
 
 let img = new Image();
@@ -32,6 +41,9 @@ console.log("height: ", img.height);
 console.log("Image: ", img);
 
 export default {
+  components: {
+    "nav-bar": nav
+  },
   data: () => {
     return {
       predValue: ""
