@@ -1,10 +1,10 @@
 <template>
-  <div class="discover-dishes verticalCenter">
+  <div class="favourites verticalCenter">
     <b-container fluid class="p-0">
       <b-row class="card-top m-0">
         <b-col>
           <b-row>
-            <div style="font-size: 20px;">Discover Dishes</div>
+            <div style="font-size: 20px;">Favourites</div>
           </b-row>
           <b-row class="my-3">
             <b-btn

@@ -2,19 +2,19 @@
   <v-card class="card">
     <b-container>
       <b-row>
-        <b-col class="d-flex align-items-center" style="width: 20%;" @click="toPlaces">
+        <b-col class="d-flex float-right" cols="3" @click="toPlaces">
           <img src="/img/map-paper.png">
         </b-col>
-        <b-col class="d-flex align-items-center" style="width: 20%;" @click="toDishes">
+        <b-col class="d-flex align-items-center" cols="2" @click="toDishes">
           <img src="/img/users-2.png">
         </b-col>
-        <b-col class="d-flex align-items-center" style="width: 20%;" @click="toCamera">
+        <b-col class="d-flex float-left" cols="2" @click="toCamera">
           <img src="/img/photo-camera.png">
         </b-col>
-        <b-col class="d-flex align-items-center" style="width: 20%;">
+        <b-col class="d-flex align-items-center" cols="2" @click="toFavourites">
           <img src="/img/star-2.png">
         </b-col>
-        <b-col class="d-flex align-items-center" style="width: 20%;" @click="toProfile">
+        <b-col class="d-flex float-left" cols="3" @click="toProfile">
           <img src="/img/user.png">
         </b-col>
       </b-row>
@@ -47,6 +47,9 @@ export default {
     },
     toProfile() {
       this.$router.push("/my-profile");
+    },
+    toFavourites() {
+      this.$router.push("/favourites");
     }
   }
 };
