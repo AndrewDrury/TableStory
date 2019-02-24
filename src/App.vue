@@ -4,7 +4,7 @@
     <b-navbar toggleable="md" type="dark" variant="dark" class="d-fixed">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-      <b-navbar-brand href="/">Table Story</b-navbar-brand>
+      <b-navbar-brand href="/">TableStory</b-navbar-brand>
 
       <b-collapse is-nav id="nav_collapse">
 
