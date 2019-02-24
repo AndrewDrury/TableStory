@@ -1,8 +1,34 @@
 @import "./variables.scss";
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url('https://fonts.googleapis.com/css?family=Muli');
 
 * {
     color: black;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
 
+}
+
+.btn {
+    border: 1px solid $primary !important;
+    border-radius: 8px !important;
+  
+    &.btn-primary {
+      color: $white;
+      background: $primary;
+  
+      &:hover {
+        color: $primary;
+        background: $white;
+      }
+    }
+  
+    &.btn-light {
+      color: $primary;
+      background: $white;
+  
+      &:hover {
+        color: $white;
+        background: $primary;
+      }
+    }
 }

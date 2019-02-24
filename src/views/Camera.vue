@@ -3,7 +3,7 @@
     {{ predValue }}
     <b-row>
       <b-col>
-        <img src="@/assets/pizza1.jpg">
+        <img src="/img/pizza1.jpg">
       </b-col>
     </b-row>
   </div>
@@ -13,7 +13,7 @@
 import * as tf from "@tensorflow/tfjs";
 
 let img = new Image();
-img.src = "@/assets/pizza1.jpg";
+img.src = "/img/pizza1.jpg";
 console.log("width: ", img.width);
 console.log("height: ", img.height);
 
@@ -31,10 +31,6 @@ export default {
         .loadModel("http://localhost:8081/model.json")
         .then(promisedModel => {
           console.log("LOADED");
-          let img = new Image();
-          img.src = "@/assets/pizza1.jpg";
-
-          console.log("img.src: ", img.src);
           const example = tf.fromPixels(new ImageData(img.width, img.height));
           console.log("example: ", example);
           const prediction = promisedModel.predict(example);
