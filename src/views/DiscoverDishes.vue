@@ -20,10 +20,11 @@
           <b-col>
             <b-row>
               <b-col>
-                <b-row class="image imageItem"></b-row>
+                <b-row class="image imageItem" style="background: url('/img/egg1.png')"></b-row>
               </b-col>
             </b-row>
             <b-row class="pt-2">
+                <img src='/img/heart.png'/>
               <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">55 bites</b-col>
               <div
                 class="float-right rightAlign"
@@ -49,10 +50,11 @@
           <b-col>
             <b-row>
               <b-col>
-                <b-row class="image imageItem"></b-row>
+                <b-row class="image imageItem" style="background: url('/img/egg2.png')"></b-row>
               </b-col>
             </b-row>
             <b-row class="pt-2">
+              <img src='/img/heart.png'/>
               <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">55 bites</b-col>
               <div
                 class="float-right rightAlign"
@@ -116,7 +118,6 @@
 }
 
 .imageItem {
-  background: url("/img/pizza1.jpg");
   background-size: cover;
   width: 71vw;
   height: 20vh;
