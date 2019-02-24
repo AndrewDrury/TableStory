@@ -11,6 +11,7 @@
 .btn {
     border: 1px solid $primary !important;
     border-radius: 8px !important;
+    box-shadow: 0 0 15px 0 rgba(218, 216, 216, 0.5);
   
     &.btn-primary {
       color: $white;

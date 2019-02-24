@@ -21,34 +21,34 @@
         indicators
         :interval="40000"
         img-width="1024"
-        img-height="960"
+        img-height="700"
         v-model="slide"
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
         <!-- Slides with custom text -->
         <b-carousel-slide class="transparent" style="height: 300px;">
-          <img src="@/assets/logo.png" class="image" height="50" width="50">
-          <h1>Welcome to</h1>
-          <h1>TableStory</h1>
+          <img src="@/assets/logo-plate.png" class="image" height="55" width="55">
+          <h1 class="mt-4">Welcome to</h1>
+          <h1 class="mb-4">TableStory</h1>
         </b-carousel-slide>
 
         <b-carousel-slide class="transparent" style="height: 300px;">
-          <img src="@/assets/logo.png" class="image" height="50" width="50">
-          <h1>Upload Your</h1>
-          <h1>Tasty Pics</h1>
+          <img src="@/assets/logo-photo.png" class="image" height="47" width="47">
+          <h1 class="mt-4">Upload Your</h1>
+          <h1 class="mb-4">Tasty Pics</h1>
         </b-carousel-slide>
 
         <b-carousel-slide class="transparent" style="height: 300px;">
-          <img src="@/assets/logo.png" class="image" height="50" width="50">
-          <h1>Discover New</h1>
-          <h1>Places to Eat</h1>
+          <img src="@/assets/logo-map.png" class="image" height="45" width="45">
+          <h1 class="mt-4">Discover New</h1>
+          <h1 class="mb-4">Places to Eat</h1>
         </b-carousel-slide>
 
         <b-carousel-slide class="transparent" style="height: 300px;">
-          <img src="@/assets/logo.png" class="image" height="50" width="50">
-          <h1>Build Your</h1>
-          <h1>Food Network</h1>
+          <img src="@/assets/logo-users.png" class="image" height="50" width="50">
+          <h1 class="mt-4">Build Your</h1>
+          <h1 class="mb-4">Food Network</h1>
         </b-carousel-slide>
       </b-carousel>
       <a class="bottom" href="/build-profile/">Skip Intro</a>
@@ -83,7 +83,7 @@
   position: absolute;
   top: 700px;
   left: 0px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
