@@ -91,6 +91,43 @@
                 </b-col>
               </b-card>
             </b-row>
+            <b-row class="px-4">
+              <b-card class="card-gen">
+                <b-col>
+                  <b-row>
+                    <b-col>
+                      <b-row class="image imageItem left"></b-row>
+                    </b-col>
+                    <b-col>
+                      <b-row class="image imageItem right" style="margin-bottom: 15px;"></b-row>
+                      <b-row class="image imageItem right"></b-row>
+                    </b-col>
+                  </b-row>
+                  <b-row class="pt-2">
+                    <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">The Real McCoy</b-col>
+                    <b-col class="text-left ml-0 pt-1 distance" style="font-size: 11px;">•10 km away</b-col>
+                    <div
+                      class="float-right rightAlign"
+                      style="background: url('/img/star.png'); background-size: cover;"
+                    >
+                      <h4>&nbsp;</h4>
+                    </div>
+                  </b-row>
+                  <b-row>
+                    <b-col
+                      class="text-left ml-0 pt-1 info"
+                      style="font-size: 11px;"
+                    >Pizza Restaurant $</b-col>
+                  </b-row>
+                  <b-row>
+                    <b-col
+                      class="text-left ml-0 pt-1 info"
+                      style="font-size: 11px;"
+                    >Closes today at 1 a.m.</b-col>
+                  </b-row>
+                </b-col>
+              </b-card>
+            </b-row>
           </b-col>
         </b-row>
       </b-col>
