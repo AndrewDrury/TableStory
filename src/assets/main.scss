@@ -1,35 +1,34 @@
 @import "./variables.scss";
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
-@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url("https://fonts.googleapis.com/css?family=Muli");
 
 * {
-    color: black;
-    font-family: 'Muli', sans-serif;
-
+  color: black;
+  font-family: "Muli", sans-serif;
 }
 
 .btn {
-    border: 1px solid $primary !important;
-    border-radius: 8px !important;
-    box-shadow: 0 0 15px 0 rgba(218, 216, 216, 0.5);
-  
-    &.btn-primary {
-      color: $white;
-      background: $primary;
-  
-      &:hover {
-        color: $primary;
-        background: $white;
-      }
-    }
-  
-    &.btn-light {
+  border: 1px solid $primary !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 15px 0 rgba(218, 216, 216, 0.5);
+
+  &.btn-primary {
+    color: $white;
+    background: $primary;
+
+    &:hover {
       color: $primary;
       background: $white;
-  
-      &:hover {
-        color: $white;
-        background: $primary;
-      }
     }
+  }
+
+  &.btn-light {
+    color: $primary;
+    background: $white;
+
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
+  }
 }

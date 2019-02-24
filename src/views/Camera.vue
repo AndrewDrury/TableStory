@@ -25,7 +25,6 @@
 import * as tf from "@tensorflow/tfjs";
 
 let img = new Image();
-
 img.src = "/img/pizza1.jpg";
 console.log("width: ", img.width);
 console.log("height: ", img.height);
@@ -46,8 +45,10 @@ export default {
           console.log("LOADED");
           let img = new Image(261, 264);
           img.src = "@/assets/pizza1.jpg";
-          const example = tf.fromPixels(new ImageData(261, 264));
+          //   const example = tf.fromPixels(new ImageData(261, 264));
           //   const example = tf.fromPixels(new ImageData(img.width, img.height));
+          const example = tf.fromPixels(new ImageData(img.width, img.height));
+          console.log("example: ", example);
           const prediction = promisedModel.predict(example);
           predValue = prediction;
         })
