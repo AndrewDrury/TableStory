@@ -51,7 +51,7 @@
           <h1 class="mb-4">Food Network</h1>
         </b-carousel-slide>
       </b-carousel>
-      <a class="bottom" href="/build-profile/">Skip Intro</a>
+      <a class="bottom" href="/build-profile/">Next</a>
     </b-container>
   </div>
 </template>
