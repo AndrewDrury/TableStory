@@ -1,7 +1,23 @@
 <template>
   <v-card class="card">
-    <b-container class="bg">
-        <h1>  &nbsp; </h1>
+    <b-container>
+        <b-row>
+            <b-col class="d-flex align-items-center" style="width: 20%;" @click="toPlaces">
+                <img src="/img/map-paper.png"/>
+            </b-col>
+            <b-col class="d-flex align-items-center" style="width: 20%;" @click="toDishes">
+                <img src="/img/users-2.png"/>
+            </b-col>
+            <b-col class="d-flex align-items-center" style="width: 20%;" @click="toCamera">
+                <img src="/img/photo-camera.png"/>
+            </b-col>
+            <b-col class="d-flex align-items-center" style="width: 20%;">
+                <img src="/img/star-2.png"/>
+            </b-col>
+            <b-col class="d-flex align-items-center" style="width: 20%;" @click="toProfile">
+                <img src="/img/user.png"/>
+            </b-col>
+        </b-row>
     </b-container>
   </v-card>
 </template>
@@ -15,9 +31,25 @@
   bottom: 0;
 }
 
-.bg {
-    background: url('/img/nav.png');
-    background-size: cover
-}
 </style>
+
+<script>
+export default {
+    methods: {
+        toPlaces() {
+            this.$router.push('discover-places')
+        },
+        toDishes() {
+            this.$router.push('discover-dishes')
+        },
+        toCamera() {
+            this.$router.push('camera')
+        },
+        toProfile() {
+            this.$router.push('my-profile')
+        }
+    }
+}
+</script>
+
 
