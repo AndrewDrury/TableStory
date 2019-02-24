@@ -1,0 +1,29 @@
+<template>
+  <div class="welcome">
+    <b-container fluid class="p-0">
+        <b-col>
+            <b-row>
+                <h1 style="margin:auto;">welcome</h1>
+            </b-row>
+        </b-col>
+    </b-container>
+  </div>
+</template>
+
+<style lang="scss">
+@import url("/src/assets/main.scss");
+</style>
+
+
+<script lang="ts">
+import Vue from "vue";
+import HelloWorld from "@/components/HelloWorld.vue";
+
+export default Vue.extend({
+  name: "welcome",
+  components: {
+    HelloWorld
+  }
+});
+</script>
+`
