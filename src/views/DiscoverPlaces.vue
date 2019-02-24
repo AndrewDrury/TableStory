@@ -5,6 +5,13 @@
             <b-row>
                 <h1 style="margin:auto;">Discover Places</h1>
             </b-row>
+            <b-row style="width:1000px; height:1000px;">
+              <google-map
+                name="map"
+                :coords="coords"
+                :centerCoord="centerCoord"
+              ></google-map>
+            </b-row>
         </b-col>
     </b-container>
   </div>
@@ -18,9 +25,25 @@
 </style>
 
 <script>
+import googleMap from '@/components/GoogleMap.vue'
+
 export default {
+  components: {
+    'google-map' : googleMap,
+  },
   data: () => {
-    return {}
+    return {
+      coords: [
+        {
+          lat: 43.7874696,
+          lng: -79.2615894
+        },
+      ],
+      centerCoord: {
+        lat: 43.7874696,
+        lng: -79.2615894
+      }
+    }
   }
 }
 </script>
