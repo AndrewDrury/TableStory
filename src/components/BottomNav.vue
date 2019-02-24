@@ -1,7 +1,7 @@
 <template>
   <v-card class="card">
     <b-container class="bg">
-        <h1>  &nbsp; </h1>
+      <h1 class="pb-3">&nbsp;</h1>
     </b-container>
   </v-card>
 </template>
@@ -16,8 +16,8 @@
 }
 
 .bg {
-    background: url('/img/nav.png');
-    background-size: cover
+  background: url("/img/nav.png");
+  background-size: cover;
 }
 </style>
 
