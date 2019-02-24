@@ -1,13 +1,27 @@
 <template>
-  <div>
-    {{ predValue }}
+  <div class="camera">
+    <!-- <view class="container">
+    <camera class="container" :type="this.type"/>
+    </view>-->
     <b-row>
       <b-col>
-        <img src="@/assets/pizza1.jpg">
+        <input class="mt-4" type="file" accept="image/*" capture="camera">
       </b-col>
     </b-row>
+    <b-row>
+      <b-col>
+        <b-btn v-on:click="upload">Upload</b-btn>
+      </b-col>
+    </b-row>
+    {{ predValue }}
   </div>
 </template>
+
+<style>
+@import "../assets/main.scss";
+@import "../assets/variables.scss";
+</style>
+
 
 <script>
 import * as tf from "@tensorflow/tfjs";
@@ -30,7 +44,6 @@ export default {
           let img = new Image();
           img.src = "@/assets/pizza1.jpg";
           const example = tf.fromPixels(new ImageData(261, 264));
-          imageData;
           //   const example = tf.fromPixels(new ImageData(img.width, img.height));
           const prediction = promisedModel.predict(example);
           predValue = prediction;
@@ -39,7 +52,8 @@ export default {
           console.log("ERROR");
           console.log(err);
         });
-    }
+    },
+    upload() {}
   },
   mounted() {
     this.loadModel();

@@ -5,3 +5,18 @@
   color: black;
   font-family: "Josefin Sans", sans-serif;
 }
+
+.btn {
+  color: black;
+  background: white;
+
+  height: 39px;
+  width: 162px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 0 rgba(218, 216, 216, 0.5);
+
+  &:hover {
+    color: white;
+    background: $primary-color;
+  }
+}
