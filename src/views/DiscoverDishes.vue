@@ -55,8 +55,8 @@
 
 
 <style lang="scss">
-@import url("/src/assets/main.scss");
-@import url("/src/assets/variables.scss");
+@import "../assets/main.scss";
+@import "../assets/variables.scss";
 
 .desc {
   font-size: 11px;
