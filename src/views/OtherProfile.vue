@@ -21,7 +21,9 @@
               >Serve Me</b-btn>
             </b-row>
           </b-col>
-          <b-col class="d-flex align-items-center" style="background:url('/img/pizza1.jpg')"></b-col>
+          <b-col class="d-flex align-items-center">
+            <img src='/img/amy.png'/>
+          </b-col>
         </b-row>
         <b-row>
           <b-col class="p-3">
@@ -46,11 +48,11 @@
                 <b-col>
                   <b-row>
                     <b-col>
-                      <b-row class="image imageItem left"></b-row>
+                      <b-row class="image imageItem left" style="background: url('/img/833711.jpg')"></b-row>
                     </b-col>
                     <b-col>
-                      <b-row class="image imageItem right" style="margin-bottom: 15px;"></b-row>
-                      <b-row class="image imageItem right"></b-row>
+                      <b-row class="image imageItem right" style="margin-bottom: 15px; background: url('/img/61656.jpg')"></b-row>
+                      <b-row class="image imageItem right" style="background: url('/img/344397.jpg')"></b-row>
                     </b-col>
                   </b-row>
                   <b-row class="pt-2">
@@ -72,15 +74,15 @@
                 <b-col>
                   <b-row>
                     <b-col>
-                      <b-row class="image imageItem left"></b-row>
+                      <b-row class="image imageItem left" style="background: url('/img/1699065.png')"></b-row>
                     </b-col>
                     <b-col>
-                      <b-row class="image imageItem right" style="margin-bottom: 15px;"></b-row>
-                      <b-row class="image imageItem right"></b-row>
+                      <b-row class="image imageItem right" style="margin-bottom: 15px; background: url('/img/1806344.png')"></b-row>
+                      <b-row class="image imageItem right" style="background: url('/img/7566.png')"></b-row>
                     </b-col>
                   </b-row>
                   <b-row class="pt-2">
-                    <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">Toronto Pizza</b-col>
+                    <b-col class="text-left pl-0 pt-1" style="font-size: 14px;">Omelettes</b-col>
                     <!-- <b-col> -->
                     <div
                       class="float-right rightAlign"
@@ -137,7 +139,6 @@
 }
 
 .imageItem {
-  background: url("/img/pizza1.jpg");
   background-size: cover;
 }
 
