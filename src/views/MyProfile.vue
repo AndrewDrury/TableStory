@@ -21,7 +21,9 @@
               >Edit Profile</b-btn>
             </b-row>
           </b-col>
-          <b-col class="d-flex align-items-center" style="background:url('/img/pizza1.jpg')"></b-col>
+          <b-col class="d-flex align-items-center">
+						<img src='/img/user-pic.png'/>
+					</b-col>
         </b-row>
         <b-row>
           <b-col class="p-3">
@@ -36,9 +38,8 @@
               >Places</b-btn>
               <div
                 class="ml-3"
-                style="width: 25.5%; height: 28px; background:url('/img/view-buttons.png'); background-size: contain;"
+                style="width: 25.5%; height: 28px; '/img/view-buttons.png'); background-size: contain;"
               >
-                <h4>&nbsp;</h4>
               </div>
             </b-row>
             <b-row class="px-4">
@@ -111,7 +112,7 @@
 }
 
 .imageItem {
-  background: url("/img/pizza1.jpg");
+  background: url('/img/bread.png');
   background-size: cover;
 }
 
