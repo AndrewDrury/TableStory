@@ -10,4 +10,4 @@ TableStory is a mobile web app made with VueJS, Bootstrap and SCSS. TableStory i
 
 * **Andrew Drury** - *Developer* - [AndrewDrury](https://github.com/AndrewDrury)
 * **Andy Wang** - *Developer* - [AndyWang99](https://github.com/AndyWang99)
-* **Carol Chu** - *Designer*
+* **Carol Chu** - *Designer* - [LinkedIn](https://www.linkedin.com/in/cr3chu/)
